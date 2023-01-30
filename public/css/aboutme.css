@@ -1,0 +1,223 @@
+:root{
+    --main-bg: #FAF5E4;
+    --dark-green: #004445;
+    --dark-brown:  #521A09;
+    --yellow: #F8B400;
+    --middle-green: #2C786C; 
+}
+
+
+body{
+    background-color: var(--main-bg);
+}
+#container{
+    width: 100vw;
+    height: 100vh;
+}
+
+/** About the HEADER */
+/** *****************************************************************/
+
+header{
+    width: 100%;
+    height: 15vh;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header h1{
+    font-size: 2rem;
+    color: var(--middle-green);
+}
+/*& About the LOGO */
+/*& *********************************************************/
+.logo{
+    font-family: 'sageregular';
+}
+
+/*& About the MENU BURGER */
+/*& *********************************************************/
+
+
+/*~ About the "icon" */
+.hamburger{
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    cursor: pointer;
+    transition:  transform 330ms ease-out;
+}
+
+.line-menu{
+    background-color: var(--yellow);
+    border-radius: 5px;
+    width: 100%;
+    height: 4px;
+}
+.line-menu.half{
+    width: 50%;
+}
+.line-menu.start{
+    transition: transform 330ms;
+    transition-timing-function: cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: right;
+}
+.line-menu.end{
+    align-self: flex-end;
+    transition: transform 330ms;
+    transition-timing-function: cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: left;
+}
+
+/*~ Animation ONCLICK avec JS */
+.hamburger.is-active{
+    transform: rotate(-45deg);
+    background-color: var(--main-bg);
+    z-index: 1;
+}
+.is-active .line-menu.start{
+    transform: rotate(-90deg) translateX(3px);
+    background-color: var(--main-bg);
+    z-index: 1;
+}
+.is-active .line-menu.end{
+    transform: rotate(-90deg) translateX(-3px);
+    background-color: var(--main-bg);
+    z-index: 1;
+}
+
+/*~ About the NAVBAR */
+a , button{
+    cursor: pointer;
+    text-decoration: none;
+}
+a{
+    color: white;
+}
+
+.navBar{
+    position:fixed;
+    right: -500px;
+    top: 0;
+    width: 12vw;
+    height: 100%;
+    padding-top: 8%;
+    background-color: var(--yellow);
+    transition: 0.5s;
+}   
+.navBar h3{
+    color: var(--main-bg);
+    font-family: 'sageregular';
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 40px;
+}
+
+.navBar ul li{
+
+    color: var(--main-bg);
+    font-family: 'poppinsextralight';
+    text-align: center;
+    text-transform: uppercase;
+    list-style-type:none;
+    font-size: 0.8rem;
+    padding: 30px 30px;
+    border-bottom: 1pt solid var(--main-bg);
+}
+.navBar ul{
+    margin-bottom: 50px;
+}
+
+.navBar.active{
+    right: 0;
+}
+/** About the CONTENT */
+/** *****************************************************************/
+#content{
+    display: flex;
+    flex-direction: column;
+}
+.screen{
+    width: 100vw;
+    height: 60vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*& About the img and p ARTICLE */
+
+.article{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+}
+.div-avatar{
+    width: 20%;
+}
+.div-about{
+    width: 35%;
+    height: 45vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.avatar{
+    width: 100%;
+    object-fit: cover;
+}
+h2{
+    font-family: 'sageregular';
+    color: var(--middle-green);
+    font-size: 1.8rem;
+}
+.separator-line{
+    width: 100%;
+    border-radius: 5px;
+    height: 1px;
+    background-color: var(--middle-green);
+}
+.div-about > p{
+    font-family: 'poppinsextralight';
+    color: var(--middle-green);
+    line-height: 1.3;
+}
+
+
+
+/*& ABOUT THE CONTACT ICONS AREA */
+/*& *******************************************/
+.contact{
+    width: 100%;
+    height: 20vh;
+}
+.contact-icons{
+    width: 100%;
+    height: 20vh;
+    padding-left: 3%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.icons{
+    width: 70%;
+    object-fit: cover;
+}

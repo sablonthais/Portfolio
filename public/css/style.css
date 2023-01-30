@@ -1,0 +1,295 @@
+:root{
+    --main-bg: #FAF5E4;
+    --dark-green: #004445;
+    --dark-brown:  #521A09;
+    --yellow: #F8B400;
+    --middle-green: #2C786C; 
+}
+
+
+body{
+    background-color: var(--main-bg);
+}
+#container{
+    width: 100vw;
+    height: 100vh;
+}
+
+/*^ About the INDEX */
+/*^ *****************************************************************/
+
+/** About the HEADER */
+/** *****************************************************************/
+
+header{
+    width: 100%;
+    height: 15vh;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header h1{
+    font-size: 2rem;
+    color: var(--dark-green);
+}
+
+
+/*todo About the color change on the title with JS*/
+.darkGreen{
+    color: var(--dark-green);
+}
+.darkBrown{
+    color: var(--dark-brown);
+}
+.middleGreen{
+    color: var(--middle-green);
+}
+
+
+/*& About the LOGO */
+/*& *********************************************************/
+.logo{
+    font-family: 'sageregular';
+}
+#frontend{
+    font-size: medium;
+}
+
+
+/*& About the MENU BURGER */
+/*& *********************************************************/
+
+
+/*~ About the "icon" */
+.hamburger{
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    cursor: pointer;
+    transition:  transform 330ms ease-out;
+}
+
+.line-menu{
+    background-color: var(--yellow);
+    border-radius: 5px;
+    width: 100%;
+    height: 4px;
+}
+.line-menu.half{
+    width: 50%;
+}
+.line-menu.start{
+    transition: transform 330ms;
+    transition-timing-function: cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: right;
+}
+.line-menu.end{
+    align-self: flex-end;
+    transition: transform 330ms;
+    transition-timing-function: cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: left;
+}
+
+/*~ Animation ONCLICK avec JS */
+.hamburger.is-active {
+    transform: rotate(-45deg);
+    color: var(--main-bg);
+    z-index: 1;
+}
+.is-active .line-menu.start{
+    transform: rotate(-90deg) translateX(3px);
+    background-color: var(--main-bg);
+    z-index: 1;
+}
+.is-active .line-menu.end{
+    transform: rotate(-90deg) translateX(-3px);
+    background-color: var(--main-bg);
+    z-index: 1;
+}
+.is-active .line-menu{
+    background-color: var(--main-bg);
+    z-index: 1;
+}
+
+/*~ About the NAVBAR */
+a , button{
+    cursor: pointer;
+    text-decoration: none;
+}
+a{
+    color: white;
+}
+
+.navBar{
+    position:fixed;
+    right: -500px;
+    top: 0;
+    width: 12vw;
+    height: 100%;
+    padding-top: 8%;
+    background-color: var(--yellow);
+    transition: 0.5s;
+}   
+.navBar h3{
+    color: var(--main-bg);
+    font-family: 'sageregular';
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 40px;
+}
+
+.navBar ul li{
+
+    color: var(--main-bg);
+    font-family: 'poppinsextralight';
+    text-align: center;
+    text-transform: uppercase;
+    list-style-type:none;
+    font-size: 0.8rem;
+    padding: 30px 30px;
+    border-bottom: 1pt solid var(--main-bg);
+}
+.navBar ul{
+    margin-bottom: 50px;
+}
+
+.navBar.active{
+    right: 0;
+}
+
+/** About the CONTENT */
+/** *****************************************************************/
+#content{
+    display: flex;
+    flex-direction: column;
+}
+.screen{
+    width: 100vw;
+    height: 60vh;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*& About the BLOB-SLIDER*/
+/*& ******************************************************/
+
+
+.blob-area{
+    width: 70vw;
+    height: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.blob-slider{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+}
+.blob-a{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blob-img{
+    width: 65%;
+    object-fit: cover;
+}
+
+/*~ About the BLOB */
+.blob{
+    max-width: 100%;
+    display: none;
+}
+
+.blob.active{
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade 0.8s;
+}
+
+/*todo about the ANIMATION on THE BLOBS */
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/*todo About THE ARROW BUTTONS*/
+.arrow-left{
+    width: 10%;
+    height: auto;
+    color: var(--dark-green);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-right{
+    width: 10%;
+    height: auto;
+    color: var(--dark-green);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-nav{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+/*& ABOUT THE CONTACT ICONS AREA */
+/*& *******************************************/
+.contact{
+    width: 100%;
+    height: 20vh;
+}
+.contact-icons{
+    width: 100%;
+    height: 20vh;
+    padding-left: 3%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.icons{
+    width: 70%;
+    object-fit: cover;
+}
+
+
+
+
+
+
