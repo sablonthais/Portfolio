@@ -85,9 +85,9 @@ header h1{
 }
 
 /*~ Animation ONCLICK avec JS */
-.hamburger.is-active{
+.hamburger.is-active {
     transform: rotate(-45deg);
-    background-color: var(--main-bg);
+    color: var(--main-bg);
     z-index: 1;
 }
 .is-active .line-menu.start{
@@ -100,6 +100,11 @@ header h1{
     background-color: var(--main-bg);
     z-index: 1;
 }
+.is-active .line-menu{
+    background-color: var(--main-bg);
+    z-index: 1;
+}
+
 /*~ About the NAVBAR */
 a , button{
     cursor: pointer;
