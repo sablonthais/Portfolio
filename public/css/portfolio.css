@@ -34,6 +34,7 @@ header h1{
     font-size: 2rem;
     color: var(--dark-green);
 }
+
 /*& About the LOGO */
 /*& *********************************************************/
 .logo{
@@ -44,6 +45,9 @@ header h1{
     color: var(--dark-green);
     font-family: 'sageregular';
     cursor: pointer;
+}
+#frontend{
+    font-size: medium;
 }
 
 /*& About the MENU BURGER */
