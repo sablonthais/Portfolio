@@ -166,7 +166,20 @@ a{
     justify-content: space-evenly;
     align-items: center;
 }
-.skills{
+.galets{
+    width: 70%;
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.galets_pic img{
+    width: 100%;
+    /* object-fit: cover; */
+}
+
+/* .skills{
     width: 25%;
     height: 40vh;
 }
@@ -234,7 +247,7 @@ a{
     gap: 10px;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 
 
