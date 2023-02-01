@@ -182,7 +182,7 @@ a{
 }
 .blob > a{
     text-decoration: none;
-    color: var(--dark-green);
+    color: var(--main-bg);
     font-family: 'sageregular';
     cursor: pointer;
 }
@@ -192,6 +192,9 @@ a{
     position: absolute;
     z-index: -1;
 
+}
+.bulle .project-rob{
+    padding-left: 2%;
 }
 
 .project-rob > a > h2{
