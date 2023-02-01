@@ -39,6 +39,9 @@ header h1{
 .logo{
     font-family: 'sageregular';
 }
+#frontend{
+    font-size: medium;
+}
 
 /*& About the MENU BURGER */
 /*& *********************************************************/
