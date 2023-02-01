@@ -65,6 +65,9 @@ function colorChange(count) {
         thais.classList.add('darkGreen');
         thais.classList.remove('darkBrown');
         thais.classList.remove('middleGreen');
+        frontend.classList.add('darkGreen');
+        frontend.classList.remove('darkBrown');
+        frontend.classList.remove('middleGreen');
         document.querySelector('.left').classList.add('darkGreen')
         document.querySelector('.left').classList.remove('darkBrown');
         document.querySelector('.left').classList.remove('middleGreen');
@@ -76,6 +79,9 @@ function colorChange(count) {
         thais.classList.add('darkBrown');
         thais.classList.remove('darkGreen');
         thais.classList.remove('middleGreen');
+        frontend.classList.add('darkBrown');
+        frontend.classList.remove('darkGreen');
+        frontend.classList.remove('middleGreen');
         document.querySelector('.left').classList.add('darkBrown')
         document.querySelector('.left').classList.remove('darkGreen');
         document.querySelector('.left').classList.remove('middleGreen');
@@ -88,6 +94,9 @@ function colorChange(count) {
         thais.classList.add('middleGreen');
         thais.classList.remove('darkBrown');
         thais.classList.remove('darkGreen');
+        frontend.classList.add('middleGreen');
+        frontend.classList.remove('darkBrown');
+        frontend.classList.remove('darkGreen');
         document.querySelector('.left').classList.add('middleGreen')
         document.querySelector('.left').classList.remove('darkBrown');
         document.querySelector('.left').classList.remove('darkGreen');
