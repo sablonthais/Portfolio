@@ -162,7 +162,7 @@ a{
 .screen{
     width: 100%;
     height: 60vh;
-    padding-left: 3%;
+    padding-left: 8%;
     padding-right: 3%;
     
     display: flex;
@@ -170,54 +170,48 @@ a{
     justify-content: space-evenly;
     align-items: center;
 }
-.blob{
-    width: 50%;
-    height: 100%;
-    color: var(--dark-green);
-    font-family: 'sageregular';
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.section-blobz{
+    width: 40%; 
 }
-.blob > a{
+
+.tk-blob-pokemon{
+    width: 80%;
+}
+.pokemon{
+    position: absolute;
+    left:14%;
+    top: 45%;
+}
+
+.tk-blob-dashboard{
+    width: 80%;
+}
+.dashboard{
+    position: absolute;
+    left:44%;
+    top: 45%;
+}
+
+.tk-blob-garance{
+    width: 80%;
+}
+.garance{
+    position: absolute;
+    left:75%;
+    top: 45%;
+}
+
+.lien a{
     text-decoration: none;
     color: var(--main-bg);
     font-family: 'sageregular';
-    cursor: pointer;
+    font-size: 1.5rem;
 }
-.bulle{
-    width: 20%;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
 
-}
-.project-dashboard > a{
-    text-align: center;
-    width: 100%;
-    padding-left: 15%;
-}
-/* .project-dashboard{
-    width: 100%;
-    max-height : 40vh;
-} */
-.project-dashboard > img{
-    width: 17.5%;
-}
-.project-dashboard > a{
-    text-align: center;
-    width: 100%;
-    padding-right: 23%;
-}
-.project-rob > a{
-    text-align: center;
-    width: 100%;
-    padding-left: 15%;
-} 
+
 /*todo ABOUT NOW NO STRESS *****************/
-.screen-nns{
+/* .screen-nns{
     width: 100vw;
     height: 100vh;
 
@@ -291,17 +285,17 @@ a{
     width: 100%;
     object-fit: cover;
 }
-
+ */
 
 
 /*todo ABOUT COLORING *****************/
-.screen-coloring{
+/* .screen-coloring{
     width: 100vw;
     height: 100vh;
 
     display: flex;
     flex-direction: row;  
-}
+} */
 /*.card{
     width: 50%;
     height: 100%;
@@ -311,7 +305,7 @@ a{
     display: flex;
     flex-direction: column;
 }*/
-.description{
+/* .description{
     justify-content: space-around;
     align-items: flex-start;
 }
@@ -347,7 +341,7 @@ a{
     border: solid 1px var(--main-bg);
     border-radius: 25px;
     
-}
+} */
 
 /*& ABOUT THE CONTACT ICONS AREA */
 /*& *******************************************/
