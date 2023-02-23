@@ -13,7 +13,7 @@
 </head>
 <body>
     <div id="container">
-        <header>
+        <header id="top">
             <div class="logo">
                 <a href="../index.html"><h1 id="thais">Sablon Thaïs</h1></a>
                 <h1 id="frontend">Junior Front End Developer</h1>
@@ -42,7 +42,7 @@
                         </svg>
                     </div>
                     <span class="lien pokemon">
-                        <a href="#"><h2>Pokemon</h2></a>
+                        <a href="#screen-pokemon"><h2>Pokemon</h2></a>
                     </span>
                 </div>
                 <div class="section-blobz">
@@ -52,7 +52,7 @@
                         </svg>
                       </div>
                     <span class="lien dashboard">
-                        <a href="#"><h2>Dashboard</h2></a>
+                        <a href="#screen-dashboard"><h2>Dashboard</h2></a>
                     </span>
                 </div>
                 <div class="section-blobz">
@@ -68,59 +68,63 @@
             </section> 
             <section class="contact">
                 <article class="contact-icons">
-                    <a href="https://github.com/sablonthais"><img class="icons" src="../public/img/gitHubIcon.png" alt="Lien GitHub"></a>
-                    <a href="https://www.linkedin.com/in/thais-sablon/"><img class="icons" src="../public/img/linkedInIcon.png" alt="Lien Linked In"></a>
-                    <a href="../public/files/CVonline.pdf"><img class="icons" src="../public/img/cvPdfIcon.png" alt="Lien CV Pdf"></a>
+                    <a href="https://github.com/sablonthais" target="_blank"><img class="icons" src="../public/img/gitHubIcon.png" alt="Lien GitHub"></a>
+                    <a href="https://www.linkedin.com/in/thais-sablon/" target="_blank"><img class="icons" src="../public/img/linkedInIcon.png" alt="Lien Linked In"></a>
+                    <a href="../public/files/CVonline.pdf" target="_blank"><img class="icons" src="../public/img/cvPdfIcon.png" alt="Lien CV Pdf"></a>
                 </article>
             </section>
-            <!-- <section class="screen-nns">
+            <!-- ABOUT THE POKEMON MEMORY-->
+            <section class="screen-pokemon" id="screen-pokemon">
+                <article class="visual card">
+                    <img src="../public/img/pokemonCode.png" alt="PokemonCode's Visual">
+                    <img src="../public/img/pokemonVisual.png" alt="Pokemon's Visual">
+                </article>
                 <article class="description card">
                     <div class="titles">
-                        <h2>Now, No Stress</h2>
-                        <p>First Group Project</p>
+                        <h2>Pokemon Memory</h2>
                     </div>
-                    <p>During my year of studying Web Development, this was my first group project. We developped a website that would provide a space for people to find ressources to manage their day to day stress and anxiety. After a quick series of questions to help us guide the visitor to the appropriate ressource, the visitor gets to use differant tools to manage their stress. Meditation, deep breathing,bedtime stories,... we tried to offer a large panel of ressources</p>
+                    
+                    <p>Petit exercice fait en Javacript, HTML et CSS, en faisant appel la fameuse api Pokemon. Il faut retrouver les paires identiques de pokemon en retournant les cartes.</p>
+                    <h3>Technologies</h3>
+                    <div class="tech-icons">
+                        <img src="../public/img/html5.png" alt="icone html5" title="icone html5">
+                        <img src="../public/img/css3.png" alt="icone css3" title="icone css3">
+                        <img src="../public/img/javascript.png" alt="icone javascript" title="icone javascript">
+                    </div>
+                    <div class="btn-links">
+                        <a href="https://github.com/sablonthais/memoryPokemon" target="_blank" ><button class="btn-git-pokemon">GitHub</button></a> 
+                        <a href="#top"><button class="btn-git-pokemon">Back To Top</button></a>   
+                    </div>
+                </article>
+            </section>
+            <!--& ABOUT THE DASHBOARD SCREEN-->
+            <section class="screen-dashboard" id="screen-dashboard">
+                <article class="description card">
+                    <div class="titles">
+                        <h2>My Node Dashboard</h2>
+                    </div>
+                    <p>Ce petit projet a été développé avec Node JS, afin de tester les bases acquises lors des cours. En développant ce Dashboard, j'ai apprit a utiliser differents packages, appeler des apis (requêtes externes) et afficher les données souhaitées à l'écran. J'y ai, bien sûr, mi ma patte CSS.</p>
                     <h3 class="techno">Technologies</h3>
                     <div class="tech-icons">
                         <img src="../public/img/html5.png" alt="icone html5" title="icone html5">
                         <img src="../public/img/css3.png" alt="icone css3" title="icone css3">
                         <img src="../public/img/javascript.png" alt="icone javascript" title="icone javascript">
-                        <img src="../public/img/php.png" alt="icone php" title="icone php">
-                        <img src="../public/img/mysql.png" alt="icone mysql" title="icone mysql">
+                        <img src="../public/img/nodejs.png" alt="icone node js" title="icone node js">
                     </div>
                     <div class="tech-icons">
-                        <img src="../public/img/adobexd.png" alt="icone adobe xd" title="icone adobe xd">                        
-                        <img src="../public/img/Illustrator.png" alt="icone adobe illustrator" title="icone adobe illustrator">
+                        <img src="../public/img/adobexd.png" alt="icone adobe xd" title="icone adobe xd">
                     </div>
                     <div class="btn-links">
-                        <button class="btn-git-nns">GitHub</button>
-                            
+                        <a href="https://github.com/sablonthais/myNodeDashboard" target="_blank" ><button class="btn-git-dashboard">GitHub</button></a> 
+                        <a href="#top"><button class="btn-git-pokemon">Back To Top</button></a>
                     </div>
                 </article>
                 <article class="visual card">
-                    <img src="../public/img/visual1nns.png" alt="Now No Stress's Visual">
-                    <img src="../public/img/visual2nns.png" alt="Now No Stress's Visual">
+                    <img src="../public/img/myNodeDashboard.png" alt="MyNodeDashboard's Visual">
+                    <img src="../public/img/dashboardCode.png" alt="MyNodeDashboard's Code Visual">
                 </article>
             </section>
-            <section class="screen-coloring">
-                <article class="visual card">
-                    <img src="../public/img/blueFox.png" alt="Coloring Fox's Visual">
-                </article>
-                <article class="description card">
-                    <h2>Coloring Little Fox</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil ullam magnam consequatur vitae illo consequuntur sequi enim et tenetur, libero dolor ipsam voluptatibus sint nam temporibus, quos blanditiis rerum dignissimos.</p>
-                    <h3>Technologies</h3>
-                    <div class="tech-icons">
-
-                    </div>
-                    <div class="btn-links">
-                        <button class="btn-git-coloring">GitHub</button>
-                            
-                    </div>
-                </article>
-                
-
-            </section> -->
+            
         </div>
 
 

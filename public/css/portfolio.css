@@ -6,6 +6,7 @@
     --middle-green: #2C786C; 
 }
 
+/*^ *****************************************************************/
 
 body{
     background-color: var(--main-bg);
@@ -34,8 +35,8 @@ header h1{
     font-size: 2rem;
     color: var(--dark-green);
 }
-/*& About the LOGO */
-/*& *********************************************************/
+/*~ About the LOGO */
+/*~ *****************************************/
 .logo{
     font-family: 'sageregular';
 }
@@ -49,11 +50,11 @@ header h1{
     font-size: medium;
 }
 
-/*& About the MENU BURGER */
-/*& *********************************************************/
+/*~ About the MENU BURGER */
+/*~ ******************************************/
 
 
-/*~ About the "icon" */
+/*& About the "icon" */
 .hamburger{
     width: 40px;
     height: 40px;
@@ -87,7 +88,7 @@ header h1{
     transform-origin: left;
 }
 
-/*~ Animation ONCLICK avec JS */
+/*& Animation ONCLICK avec JS */
 .hamburger.is-active {
     transform: rotate(-45deg);
     color: var(--main-bg);
@@ -108,7 +109,7 @@ header h1{
     z-index: 1;
 }
 
-/*~ About the NAVBAR */
+/*& About the NAVBAR */
 a , button{
     cursor: pointer;
     text-decoration: none;
@@ -198,7 +199,7 @@ a{
 }
 .garance{
     position: absolute;
-    left:75%;
+    left:73%;
     top: 45%;
 }
 
@@ -210,14 +211,14 @@ a{
 }
 
 
-/*todo ABOUT NOW NO STRESS *****************/
-/* .screen-nns{
+/*~ ABOUT THE POKEMON MEMORY *****************/
+
+.screen-pokemon{
     width: 100vw;
     height: 100vh;
 
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;  
 }
 .card{
     width: 50%;
@@ -233,9 +234,81 @@ a{
     align-items: flex-start;
 }
 
-.description > h3{
+.description h3{
     font-family: 'sageregular';
     font-size: 1rem;
+    color: var(--dark-green);
+}
+.description > p{
+    font-family: 'poppinsextralight';
+}
+.description > h2{
+    font-family: 'sageregular';
+    font-size: 1.5rem;
+    color: var(--dark-green);
+}
+
+.btn-links{
+    width: 100%;
+    height: 8%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn-links button{
+    font-family: 'sageregular';
+    font-size: 1.2rem;
+}
+.btn-links a{
+    width: 48%;
+    height: 100%;
+}
+.btn-git-pokemon{
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-bg);
+    color: var(--dark-green);
+    border: solid 1px var(--dark-green);
+    /* font-family: 'sageregular'; */
+    border-radius: 25px;
+    
+}
+.btn-git-pokemon:hover{
+    background-color: var(--dark-green);
+    color: var(--main-bg);
+    border: solid 1px var(--main-bg);
+    border-radius: 25px;
+    
+}
+
+/*~ ABOUT THE DASHBOARD *****************/
+.screen-dashboard{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    
+}
+.card{
+    width: 50vw;
+    height: 100%;
+    color: black;
+    padding: 4%;
+
+    display: flex;
+    flex-direction: column;
+}
+.description{
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.description > h3{
+    font-family: 'sageregular';
+    font-size: 1.5rem;
     color: var(--dark-green);
 }
 .description > p{
@@ -252,11 +325,10 @@ a{
 .card .techno{
     font-size: 1.5rem;
 }
-.btn-link{
-    width: 100%;
-}
 
-.btn-git-nns{
+.btn-git-dashboard{
+    width: 100%;
+    height: 100%;
     background-color: var(--main-bg);
     color: var(--dark-green);
     border: solid 1px var(--dark-green);
@@ -264,13 +336,14 @@ a{
     border-radius: 25px;
     
 }
-.btn-git-nns:hover{
+
+.btn-git-dashboard:hover{
     background-color: var(--dark-green);
     color: var(--main-bg);
     border: solid 1px var(--main-bg);
-    border-radius: 25px;
-    
+    border-radius: 25px;  
 }
+
 
 .visual{
     width: 50%;
@@ -282,66 +355,12 @@ a{
     align-items: center;
 }
 .visual > img{
-    width: 100%;
+    width: 90%;
     object-fit: cover;
-}
- */
 
-
-/*todo ABOUT COLORING *****************/
-/* .screen-coloring{
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: row;  
-} */
-/*.card{
-    width: 50%;
-    height: 100%;
-    color: black;
-    padding: 7%;
-
-    display: flex;
-    flex-direction: column;
-}*/
-/* .description{
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
-.description > h3{
-    font-family: 'sageregular';
-    font-size: 1rem;
-    color: var(--dark-green);
-}
-.description > p{
-    font-family: 'poppinsextralight';
-}
-.description > h2{
-    font-family: 'sageregular';
-    font-size: 1.5rem;
-    color: var(--dark-green);
-}
-
-.btn-link{
-    width: 100%;
-}
-.btn-git-coloring{
-    background-color: var(--main-bg);
-    color: var(--dark-green);
-    border: solid 1px var(--dark-green);
-    font-family: 'sageregular';
-    border-radius: 25px;
-    
-}
-.btn-git-coloring:hover{
-    background-color: var(--dark-green);
-    color: var(--main-bg);
     border: solid 1px var(--main-bg);
-    border-radius: 25px;
-    
-} */
+    border-radius: 5px;
+}
 
 /*& ABOUT THE CONTACT ICONS AREA */
 /*& *******************************************/
